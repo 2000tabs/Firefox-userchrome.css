@@ -183,11 +183,10 @@ button-group[class="tools-and-extensions actions-list"]{
 :root[sidebar-expand-on-hover] {
   #sidebar-container{
   z-index: 3 !important;
-  opacity: 55%  !important;
-  background-color: inherit !important;
-  /*background: var(--sidebar-background-color) !important;*/
+  opacity: 45%  !important;
+  background:  inherit !important;
   margin-left: 0px !important; 
-  width: 20px !important;
+  width: 17px !important;
   transition: 0ms !important;
   border-right: 0px !important;
   /*nova*/
@@ -198,7 +197,7 @@ button-group[class="tools-and-extensions actions-list"]{
 #sidebar-container[sidebar-launcher-expanded]{
   z-index: 3 !important;
   opacity: 85%  !important;
-  background: var(--sidebar-background-color) !important;
+  background-image: var(--toolbox-background-gradient), image(var(--toolbox-background-color)) !important;
   margin-left: 0px !important;
   width: 230px !important;
   margin-left: 0px !important;
@@ -212,7 +211,7 @@ will-change: auto !important;
    #tabbrowser-tabbox {
     &:not([sidebar-positionend]) {
       &:not([sidebar-panel-open]) {
-        margin-left: -20px !important;
+        margin-left: -17px !important;
       }
       &[sidebar-launcher-hovered][sidebar-launcher-expanded]{
         margin-left: 0px !important;
@@ -360,4 +359,4 @@ spacer{
 /*reduce menu padding*/
 menu,menuitem,toolbarbutton{
   padding-block : 3px !important;
-}
+		  }
